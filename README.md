@@ -42,6 +42,24 @@ Precio de la Gasolina y el Gasóil en Euros/Litro.
 |       12 | 112.57  |    1.71   | 1.84   |
 
 
+### Gráfica de evolución de los precios
+
+Se aprecia como los precios en España siguen unos dientes de sierra más suaves, pues "tardan" mucho más en bajar que el precio del barril Brent.
+
+![Evolución de los precios de carburantes en España contra el precio del barril Brent](res/grf_oil_prices.jpg)
+
+## Ejecución
+
+La ejecución puede realizarse directamente con `plot_results.py`, pero a continuación se muestra la forma de invocación por módulo, anteponiendo `python -m `, al ser más versátil. Las opciones son `-d`, que muestra los datos por la salida estándar, y `-g`. que muestra el gráfico que genera `pyploy`.
+
+```bash
+$ python -m plot_results.py -d
+Year: 2022
+...
+
+$ python -m plot_results.py -g
+```
+
 ## Origen de los datos
 Referencias:
 - Datos de los precios del barril brent (consultado el 10 de abril de 2026)

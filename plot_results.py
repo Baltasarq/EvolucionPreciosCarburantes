@@ -1,9 +1,10 @@
-#! /bin/env pỳthon
+#! /bin/env python
 
 
 # Plot the normalized data contrasting Brent and oil prices.
 
 
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -37,5 +38,10 @@ def show_graph_evolution(df):
 
 
 if __name__ == "__main__":
-    df = load_data("normalized_data.csv")
-    show_data_when_Brent_is_high(df)
+    if len(sys.argv) < 2:
+        print("-d\t Data\n-g\t Grf")
+    else:
+        if sys.argv[1] == "-d":
+            show_data_when_Brent_is_high(load_data("normalized_data.csv"))
+        elif sys.argv[1] == "-g":
+            show_graph_evolution(load_data("normalized_data.csv"))
