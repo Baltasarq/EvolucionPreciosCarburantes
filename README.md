@@ -58,7 +58,10 @@ Year: 2022
 ...
 
 $ python -m plot_results.py -g
+
 ```
+
+La [explicación de la extracción de los datos se puede encontrar en dev.to](https://dev.to/baltasarq/evolucion-de-los-precios-de-los-carburantes-en-espana-3nof).
 
 ## Origen de los datos
 Referencias:
